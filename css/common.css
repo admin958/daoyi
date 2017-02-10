@@ -1,0 +1,101 @@
+﻿@charset "utf-8";
+
+/* CSS Document */
+
+
+/* 移动端 */
+
+
+/* select下拉icon祛除 */
+
+
+/* 移动端点击手机自带浏览器蓝色背景 */
+
+
+/* a,img,button,input,textarea{
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+    -webkit-text-size-adjust:none;
+ }
+ */
+
+body,
+i,
+b,
+ul,
+ol,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+table,
+td,
+img,
+div,
+dl,
+dt,
+dd,
+input {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 12px;
+	font-family: '\51ac\9752\9ed1', '微软雅黑', Verdana;
+	font-weight: normal;
+	font-style: normal;
+}
+
+ul,
+ol {
+	list-style-type: none;
+}
+p{
+	margin: 0;
+}
+select,
+input,
+img {
+	vertical-align: middle;
+	outline: none;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+a:hover {
+	text-decoration: none !important;
+	cursor: pointer;
+}
+
+html {
+	overflow-x: hidden;
+}
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+.clearfix {
+	clear: both;
+	overflow: hidden;
+}
+.no-border{
+	border: none !important;
+}
+.mb0{
+	margin-bottom: 0px !important;
+}
+.mt15{
+	margin-top: 15px;
+}
