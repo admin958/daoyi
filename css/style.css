@@ -277,6 +277,7 @@
   width: 100%;
   max-width: 480px;
   padding: 0 5%;
+  z-index: 1000;
 }
 .sc-top a {
   float: left;
@@ -1105,6 +1106,53 @@
 }
 .editaddress p.p5 a img {
   width: 30px;
+}
+.addressSlelsction {
+  margin-top: 70px;
+  padding: 0 5%;
+}
+.addressSlelsction ul {
+  overflow: hidden;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #dddddd;
+  padding: 5px;
+}
+.addressSlelsction ul li {
+  float: left;
+  padding-right: 5px;
+  width: 13%;
+  text-align: center;
+  padding-bottom: 0;
+  position: relative;
+}
+.addressSlelsction ul li img {
+  width: 75%;
+}
+.addressSlelsction ul li.active_01 img {
+  padding-top: 5px;
+}
+.addressSlelsction ul li.active_02 {
+  width: 74%;
+  text-align: left;
+}
+.addressSlelsction ul li.active_02 .p1 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+.addressSlelsction ul li.active_02 .p2 {
+  font-size: 20px;
+  color: #999999;
+}
+.addressSlelsction ul li.active_03 {
+  float: right;
+}
+.addressSlelsction ul li.active_03 a {
+  display: block;
+  margin-bottom: 10px;
+}
+.addressSlelsction ul li.active_03 a img {
+  padding-top: 5px;
 }
 /*�޸�1.2����*/
 .cartlist {

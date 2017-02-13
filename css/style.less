@@ -324,6 +324,7 @@
     width: 100%;
     max-width: 480px;
     padding: 0 5%;
+    z-index: 1000;
 }
 
 .sc-top a {
@@ -333,7 +334,7 @@
     display: block;
 }
 
-    /*修改1.2*/
+/*修改1.2*/
 .sc-top a.pop_over {
     span {
         display: inline-block;
@@ -349,7 +350,7 @@
     }
 }
 
-    /*修改1.2结束*/
+/*修改1.2结束*/
 
 .sc-top p {
     width: 83%;
@@ -360,7 +361,7 @@
 }
 
 /*新加1.1*/
-    /*修改1.2*/
+/*修改1.2*/
 .cartTab {
     margin-top: 50px;
     .cartTabul {
@@ -405,7 +406,8 @@
         }
     }
 }
-    /*修改1.2结束*/
+
+/*修改1.2结束*/
 .cartCarList {
     /*margin-bottom: 70px;*/
 }
@@ -1192,6 +1194,7 @@
 /*新加1.1结束*/
 
 /*修改1.2*/
+//修改收货地址
 .editaddress {
     margin-top: 50px;
     padding: 0 5%;
@@ -1218,6 +1221,57 @@
             line-height: 30px;
             img {
                 width: 30px;
+            }
+        }
+    }
+}
+//选择收货地址
+.addressSlelsction {
+    margin-top: 70px;
+    padding: 0 5%;
+    ul{
+        overflow: hidden;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        border: 1px solid #dddddd;
+        padding: 5px;
+        li{
+            float: left;
+            padding-right: 5px;
+            width: 13%;
+            text-align: center;
+            padding-bottom: 0;
+            position: relative;
+            img{
+                width: 75%;
+            }
+        }
+        li.active_01{
+            img{
+                padding-top: 5px;
+            }
+        }
+        li.active_02{
+           width: 74%;
+            text-align: left;
+            .p1{
+                font-size: 20px;
+                margin-bottom: 5px;
+
+            }
+            .p2{
+                font-size: 20px;
+                color: #999999;
+            }
+        }
+        li.active_03{
+            float: right;
+            a{
+                display: block;
+                margin-bottom: 10px;
+                img{
+                    padding-top: 5px;
+                }
             }
         }
     }
@@ -1818,7 +1872,7 @@
 }
 
 /*加1.1*/
-    /*修改1.2*/
+/*修改1.2*/
 .deleteCart_01 {
     display: none;
     position: fixed;
@@ -1851,12 +1905,13 @@
                 color: #f7f7f7;
             }
         }
-        a.deleteCart_01_a1{
+        a.deleteCart_01_a1 {
             border-right: 1px solid #dddddd;
         }
     }
 }
-    /*修改1.2*/
+
+/*修改1.2*/
 /*加1.1*/
 
 /*订单确认*/
