@@ -136,6 +136,17 @@ window.onload = function () {
         });
     })();
 
+    /*修改1.3*/
+    //点击添加购物车弹窗
+    $('.addCart_show').click(function(){
+        $('.addCart_02').show();
+        (function () {
+            var fun = function () {
+                $('.addCart_02').hide();
+            }
+            setTimeout(fun, 1000);
+        })();
+    });
     //购物车tab切换
     $(".cartTabul li").click(function () {
         var tabContent = $('.cartCarList');
@@ -143,14 +154,13 @@ window.onload = function () {
         $(tabContent).eq($(this).index()).show().siblings().hide();
     });
 
-
     //微信支付页 点击切换图片
     $('.clickToggle img').click(function () {
-        var imgSrc=$(this).attr('src');
-        if(imgSrc=='images/panner06.png'){
-            $(this).attr('src','images/panner07.png');
-        }else if(imgSrc=='images/panner07.png'){
-            $(this).attr('src','images/panner06.png');
+        var imgSrc = $(this).attr('src');
+        if (imgSrc == 'images/panner06.png') {
+            $(this).attr('src', 'images/panner07.png');
+        } else if (imgSrc == 'images/panner07.png') {
+            $(this).attr('src', 'images/panner06.png');
         }
     });
 

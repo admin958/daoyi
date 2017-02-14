@@ -407,6 +407,126 @@
     }
 }
 
+.mycart {
+    margin-top: 50px;
+}
+
+.mycart_01 {
+    margin-top: 50px;
+    text-align: center;
+    padding: 0 5%;
+    padding-top: 120px;
+    img {
+        width: 30%;
+    }
+    p {
+        font-size: 20px;
+        color: #dddddd;
+        margin-top: 30px;
+        a {
+            display: inline-block;
+            width: 130px;
+            height: 50px;
+            line-height: 50px;
+            color: #fff;
+            background: #ff9900;
+            border-radius: 5px;
+        }
+    }
+}
+
+.payPage {
+    padding-top: 50px;
+    ul {
+        padding: 0 5%;
+        margin-top: 10px;
+        li {
+            margin-bottom: 10px;
+            overflow: hidden;
+            font-size: 16px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+            div {
+                width: 15%;
+                p {
+                    font-size: 16px;
+                    text-align: center;
+                }
+            }
+            div.div_01 {
+                width: 20%;
+                text-align: center;
+
+                a {
+                    display: inline-block;
+                    width: 100%;
+                    text-align: center;
+                    height: 60px;
+                    line-height: 60px;
+                    border: 1px solid #dddddd;
+                    img {
+                        display: inline;
+                        width: 80%;
+                        vertical-align: middle;
+                    }
+                }
+
+            }
+            div.div_02 {
+                width: 48%;
+                text-align: left;
+                margin-left: 2%;
+                a {
+                    font-size: 16px;
+                    color: #101;
+                }
+                p {
+                    text-align: left;
+                    font-size: 12px;
+                    margin-top: 5px;
+                    color: #999999;
+                }
+            }
+            div.div_03 {
+                color: #ff9900;
+            }
+            & > a {
+                display: block;
+                font-size: 16px;
+                line-height: 24px;
+                color: #999999;
+                p {
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+                input {
+                    width: 100%;
+                }
+                &.radioA {
+                    line-height: 30px;
+                    input {
+                        width: 30px;
+                    }
+                }
+            }
+
+        }
+    }
+    & > p {
+        padding: 0 5%;
+        text-align: right;
+        a {
+            display: inline-block;
+            padding: 5px 15px;
+            text-align: center;
+            font-size: 20px;
+            background: #cc3300;
+            color: #ffffff;
+            border-radius: 5px;
+        }
+    }
+}
+
 /*修改1.2结束*/
 .cartCarList {
     /*margin-bottom: 70px;*/
@@ -1167,11 +1287,17 @@
     }
 }
 
-.addCart_01 {
+.addCart_01 { /*修改1.3*/
     position: fixed;
     bottom: 50px;
-    right: 0;
+    max-width: 480px;
+    width: 100%;
     display: none;
+    a{
+        position: absolute;
+        right: 0;
+        bottom: 0px;
+    }
 }
 
 .clickImg {
@@ -1225,56 +1351,62 @@
         }
     }
 }
+
 //选择收货地址
 .addressSlelsction {
     margin-top: 70px;
     padding: 0 5%;
-    ul{
+    ul {
         overflow: hidden;
         margin-bottom: 20px;
         border-radius: 5px;
         border: 1px solid #dddddd;
         padding: 5px;
-        li{
+        li {
             float: left;
             padding-right: 5px;
             width: 13%;
             text-align: center;
             padding-bottom: 0;
             position: relative;
-            img{
+            img {
                 width: 75%;
             }
         }
-        li.active_01{
-            img{
+        li.active_01 {
+            img {
                 padding-top: 5px;
             }
         }
-        li.active_02{
-           width: 74%;
+        li.active_02 {
+            width: 74%;
             text-align: left;
-            .p1{
-                font-size: 20px;
-                margin-bottom: 5px;
-
-            }
-            .p2{
-                font-size: 20px;
-                color: #999999;
-            }
-        }
-        li.active_03{
-            float: right;
             a{
+                .p1 {
+                    font-size: 20px;
+                    margin-bottom: 5px;
+                    color: #110011;
+
+                }
+                .p2 {
+                    font-size: 20px;
+                    color: #999999;
+                }
+            }
+
+        }
+        li.active_03 {
+            float: right;
+            a {
                 display: block;
                 margin-bottom: 10px;
-                img{
+                img {
                     padding-top: 5px;
                 }
             }
         }
     }
+
 }
 
 /*修改1.2结束*/
@@ -1414,8 +1546,8 @@
     width: 100%;
     max-width: 480px;
     border-top: 1px solid #d2d2d2;
-    padding: 0 5%;
-    z-index: 1000;
+    padding: 0 2%;
+    /*修改1.3*/
 }
 
 .cart-f p {
@@ -1438,6 +1570,7 @@
     border-radius: 5px;
     padding: 8px 18px;
     margin-top: 10px;
+    float: right;
 }
 
 .cart-f a:hover {
@@ -1911,6 +2044,38 @@
     }
 }
 
+.addCart_02 { /*修改1.3*/
+    display: none;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    max-width: 480px;
+    &>div {
+        margin: 200px 15px 0;
+        background: rgba(4,4,4,0.7);
+        border-radius: 5px;
+        color: #ffffff;
+        overflow: hidden;
+        padding: 0 5%;
+        height: 140px;
+        img{
+            float: left;
+            padding-top: 45px;
+        }
+        &>div{
+            overflow: hidden;
+            padding-left: 15px;
+            padding-top: 10px;
+            p{
+                line-height: 40px;
+                font-size: 26px;
+            }
+        }
+
+    }
+}
+
 /*修改1.2*/
 /*加1.1*/
 
@@ -2300,7 +2465,7 @@
         width: 100%;
         max-width: 480px;
         margin-left: -240px;
-        padding: 0 5%;
+        padding: 0 3%;
     }
 
     .sc-top {
@@ -2311,7 +2476,7 @@
         width: 100%;
         max-width: 480px;
         margin-left: -240px;
-        padding: 0 5%;
+        padding: 0 3%;
         z-index: 1000;
     }
 
