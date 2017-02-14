@@ -351,6 +351,120 @@
   right: -20px;
   top: -10px;
 }
+.mycart {
+  margin-top: 50px;
+}
+.mycart_01 {
+  margin-top: 50px;
+  text-align: center;
+  padding: 0 5%;
+  padding-top: 120px;
+}
+.mycart_01 img {
+  width: 30%;
+}
+.mycart_01 p {
+  font-size: 20px;
+  color: #dddddd;
+  margin-top: 30px;
+}
+.mycart_01 p a {
+  display: inline-block;
+  width: 130px;
+  height: 50px;
+  line-height: 50px;
+  color: #fff;
+  background: #ff9900;
+  border-radius: 5px;
+}
+.payPage {
+  padding-top: 50px;
+}
+.payPage ul {
+  padding: 0 5%;
+  margin-top: 10px;
+}
+.payPage ul li {
+  margin-bottom: 10px;
+  overflow: hidden;
+  font-size: 16px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+.payPage ul li div {
+  width: 15%;
+}
+.payPage ul li div p {
+  font-size: 16px;
+  text-align: center;
+}
+.payPage ul li div.div_01 {
+  width: 20%;
+  text-align: center;
+}
+.payPage ul li div.div_01 a {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  height: 60px;
+  line-height: 60px;
+  border: 1px solid #dddddd;
+}
+.payPage ul li div.div_01 a img {
+  display: inline;
+  width: 80%;
+  vertical-align: middle;
+}
+.payPage ul li div.div_02 {
+  width: 48%;
+  text-align: left;
+  margin-left: 2%;
+}
+.payPage ul li div.div_02 a {
+  font-size: 16px;
+  color: #101;
+}
+.payPage ul li div.div_02 p {
+  text-align: left;
+  font-size: 12px;
+  margin-top: 5px;
+  color: #999999;
+}
+.payPage ul li div.div_03 {
+  color: #ff9900;
+}
+.payPage ul li > a {
+  display: block;
+  font-size: 16px;
+  line-height: 24px;
+  color: #999999;
+}
+.payPage ul li > a p {
+  font-size: 16px;
+  line-height: 24px;
+}
+.payPage ul li > a input {
+  width: 100%;
+}
+.payPage ul li > a.radioA {
+  line-height: 30px;
+}
+.payPage ul li > a.radioA input {
+  width: 30px;
+}
+.payPage > p {
+  padding: 0 5%;
+  text-align: right;
+}
+.payPage > p a {
+  display: inline-block;
+  padding: 5px 15px;
+  text-align: center;
+  font-size: 20px;
+  background: #cc3300;
+  color: #ffffff;
+  border-radius: 5px;
+}
 /*�޸�1.2����*/
 .cartCarList {
   /*margin-bottom: 70px;*/
@@ -1057,10 +1171,17 @@
   color: #999999;
 }
 .addCart_01 {
+  /*�޸�1.3*/
   position: fixed;
   bottom: 50px;
-  right: 0;
+  max-width: 480px;
+  width: 100%;
   display: none;
+}
+.addCart_01 a {
+  position: absolute;
+  right: 0;
+  bottom: 0px;
 }
 .clickImg {
   position: fixed;
@@ -1136,11 +1257,12 @@
   width: 74%;
   text-align: left;
 }
-.addressSlelsction ul li.active_02 .p1 {
+.addressSlelsction ul li.active_02 a .p1 {
   font-size: 20px;
   margin-bottom: 5px;
+  color: #110011;
 }
-.addressSlelsction ul li.active_02 .p2 {
+.addressSlelsction ul li.active_02 a .p2 {
   font-size: 20px;
   color: #999999;
 }
@@ -1272,8 +1394,8 @@
   width: 100%;
   max-width: 480px;
   border-top: 1px solid #d2d2d2;
-  padding: 0 5%;
-  z-index: 1000;
+  padding: 0 2%;
+  /*�޸�1.3*/
 }
 .cart-f p {
   color: #878787;
@@ -1293,6 +1415,7 @@
   border-radius: 5px;
   padding: 8px 18px;
   margin-top: 10px;
+  float: right;
 }
 .cart-f a:hover {
   color: #fff;
@@ -1695,6 +1818,37 @@
 .deleteCart_01 div a.deleteCart_01_a1 {
   border-right: 1px solid #dddddd;
 }
+.addCart_02 {
+  /*�޸�1.3*/
+  display: none;
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  max-width: 480px;
+}
+.addCart_02 > div {
+  margin: 200px 15px 0;
+  background: rgba(4, 4, 4, 0.7);
+  border-radius: 5px;
+  color: #ffffff;
+  overflow: hidden;
+  padding: 0 5%;
+  height: 140px;
+}
+.addCart_02 > div img {
+  float: left;
+  padding-top: 45px;
+}
+.addCart_02 > div > div {
+  overflow: hidden;
+  padding-left: 15px;
+  padding-top: 10px;
+}
+.addCart_02 > div > div p {
+  line-height: 40px;
+  font-size: 26px;
+}
 /*�޸�1.2*/
 /*��1.1*/
 /*����ȷ��*/
@@ -2013,7 +2167,7 @@
     width: 100%;
     max-width: 480px;
     margin-left: -240px;
-    padding: 0 5%;
+    padding: 0 3%;
   }
   .sc-top {
     position: fixed;
@@ -2023,7 +2177,7 @@
     width: 100%;
     max-width: 480px;
     margin-left: -240px;
-    padding: 0 5%;
+    padding: 0 3%;
     z-index: 1000;
   }
   .cart-f {
